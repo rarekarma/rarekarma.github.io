@@ -2003,6 +2003,7 @@ img {
       .partner p {
         font-size: 14px; } }
   .partner .partner-logo {
+    max-width: 175px;
     padding-bottom: 30px; }
   .partner .list-col ul {
     margin: 0px;
@@ -2031,7 +2032,7 @@ img {
 
 .service {
   background-color: #214185;
-  padding: 80px 0px 350px 0px;
+  padding: 80px 0px 150px 0px;
   background-image: url(../images/service-bg.png);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -2045,6 +2046,78 @@ img {
     @media screen and (max-width: 991px) {
       .service p {
         font-size: 14px; } }
+  .service .box-wrap {
+    position: relative;
+    margin: 0px 0px 130px; }
+    @media screen and (max-width: 991px) {
+      .service .box-wrap {
+        margin: 0px 0px 50px 0px; } }
+    .service .box-wrap .box-flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px -30px; }
+      @media screen and (max-width: 991px) {
+        .service .box-wrap .box-flex {
+          margin: 0px -15px; } }
+      .service .box-wrap .box-flex .box-col {
+        width: 25%;
+        padding: 0px 30px; }
+        @media screen and (max-width: 1199px) {
+          .service .box-wrap .box-flex .box-col {
+            width: 50%; } }
+        @media screen and (max-width: 767px) {
+          .service .box-wrap .box-flex .box-col {
+            width: 100%; } }
+        @media screen and (max-width: 991px) {
+          .service .box-wrap .box-flex .box-col {
+            padding: 0px 15px; } }
+        .service .box-wrap .box-flex .box-col .box-item {
+          min-height: 200px;
+          background-color: white;
+          position: relative;
+          box-shadow: rgba(255, 255, 255, 0.2) -13px 13px 0px 0px;
+          margin-bottom: 40px;
+          padding: 50px 35px 40px;
+          border-radius: 7px; }
+          .service .box-wrap .box-flex .box-col .box-item:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 13px;
+            background-color: #eadc5f;
+            z-index: 1;
+            border-radius: 9px; }
+          .service .box-wrap .box-flex .box-col .box-item h3 {
+            font-size: 18px;
+            color: #214185;
+            font-weight: bold;
+            margin: 0px 0px 10px; }
+          .service .box-wrap .box-flex .box-col .box-item p {
+            font-size: 16px;
+            color: #231f20;
+            min-height: 130px;
+            margin: 0px 0px 10px; }
+            @media screen and (max-width: 991px) {
+              .service .box-wrap .box-flex .box-col .box-item p {
+                min-height: 60px; } }
+          .service .box-wrap .box-flex .box-col .box-item .more {
+            cursor: pointer;
+            font-size: 16px;
+            color: #3f87c7;
+            display: flex;
+            align-items: center; }
+          .service .box-wrap .box-flex .box-col .box-item .arrow {
+            width: 15px;
+            height: 8px;
+            flex-shrink: 0;
+            background-image: url(../images/arrow.svg);
+            background-size: 15px;
+            margin: 0px 0px 0px 5px;
+            background-repeat: no-repeat;
+            background-position: center center; }
   .service .item {
     margin: 0px 0px 60px 0px;
     padding: 0px 20px 0px 0px; }
@@ -2101,6 +2174,110 @@ img {
         @media screen and (max-width: 767px) {
           .service .item ul li {
             width: 50%; } }
+  .service .thumb {
+    width: 1px;
+    position: relative; }
+    .service .thumb img {
+      position: absolute;
+      top: -130px;
+      width: 660px;
+      max-width: 660px;
+      left: -50px; }
+      @media screen and (max-width: 1399px) {
+        .service .thumb img {
+          width: 500px;
+          top: -110px; } }
+      @media screen and (max-width: 1199px) {
+        .service .thumb img {
+          display: none; } }
+
+.service .box-wrap2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background-image: url(../images/cloud1.png);
+  width: 431px;
+  height: 341px;
+  margin-top: -170px;
+  background-repeat: no-repeat; }
+
+.service .box-wrap3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  background-image: url(../images/cloud2.png);
+  width: 606px;
+  height: 578px;
+  margin-top: -240px;
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+.service .box-wrap .box-flex .box-col .box-item.green::before {
+  background-color: #99c33e; }
+
+.service .box-wrap .box-flex .box-col .box-item.cyan::before {
+  background-color: #00a79d; }
+
+.service .box-wrap .box-flex .box-col .box-item.blue::before {
+  background-color: #3f87c7; }
+
+.modal {
+  padding: 0px 15px; }
+
+.modal-content {
+  position: relative;
+  padding: 50px;
+  border-radius: 7px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial; }
+  .modal-content .close-modal {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/close.svg);
+    background-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.6;
+    background-position: center center;
+    transition: all 0.3s ease 0s; }
+  .modal-content .mm-caption {
+    font-size: 18px;
+    font-weight: 800;
+    color: #214185;
+    margin: 0px 0px 20px; }
+  .modal-content .mm-content {
+    font-size: 16px;
+    font-weight: 400; }
+    .modal-content .mm-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      .modal-content .mm-content ul li {
+        width: 33.33%;
+        font-size: 16px;
+        position: relative;
+        margin: 0px 0px 8px;
+        padding: 0px 10px 0px 12px; }
+        .modal-content .mm-content ul li:before {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          background-color: #3F87C7;
+          border-radius: 50%;
+          position: absolute;
+          top: 8px;
+          left: 0px; }
 
 .testimonials {
   padding: 60px 0px 60px 0px;

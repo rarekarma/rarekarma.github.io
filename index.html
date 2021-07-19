@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <title>RARE KARMA</title>
   <!-- Vender -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Main CSS (SCSS Compile) -->
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,11 +39,11 @@
           </a>
           <div class="menu">
             <ul>
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="#" data-id="#home">Home</a></li>
               <li><span>|</span></li>
-              <li><a href="#">Our services</a></li>
+              <li><a href="#" data-id="#service">Our services</a></li>
               <li><span>|</span></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#" data-id="#contact">Contact us</a></li>
             </ul>
           </div>
           <div class="menu-icon">
@@ -55,7 +55,7 @@
       </div>
     </header>
     <!--hero-->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-12">
@@ -84,7 +84,7 @@
             </div>
             <p>Based in New York, Rare Karma is a Salesforce Consulting Partner specializing in medium-sized organizations. Our consultants have the following certifications:</p>
             <div class="partner-logo">
-              <img alt="" src="images/Salesforce_Partner_Badge_Hrzntl_RGB.png">
+              <img alt="" src="images/Salesforce_Partner_Badge_Hrzntl_RGB%201.png">
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-sm-12 col-12">
@@ -125,7 +125,7 @@
       </div>
     </section>
     <!--service-->
-    <section class="service">
+    <section class="service" id="service">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-12">
@@ -136,73 +136,93 @@
               <p>Rare Karma provides the Salesforce Consulting services that are most important to medium-sized organizations. Practical and focussed on results that deliver value we won’t overcharge you for over-engineered solutions.</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Administration
+        </div>
+      </div>
+      <div class="box-wrap">
+        <div class="container">
+          <div class="box-flex">
+            <div class="box-col">
+              <div class="box-item">
+                <h3>Salesforce Administration </h3>
+                <p>Outsource your Salesforce administration to Rare Karma. Leverage our expertise and avoid .....</p>
+                <div class="more" data-toggle="modal" data-target="#modal1">
+                  More <div class="arrow"></div>
+                </div>
               </div>
-              <p>Outsource your Salesforce administration to Rare Karma. Leverage our expertise and avoid the overhead of hiring and managing your own administrators. We can work behind the scenes and/or provide direct support to your users.</p>
+            </div>
+            <div class="box-col">
+              <div class="box-item green">
+                <h3>Salesforce Implementations
+                </h3>
+                <p>We are experienced and certified specialists who can manage soup to nuts implementations .....</p>
+                <div class="more" data-toggle="modal" data-target="#modal2">
+                  More <div class="arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="thumb">
+              <img alt="" src="images/service-img.svg">
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Implementations
+        </div>
+      </div>
+      <div class="box-wrap box-wrap2">
+        <div class="container">
+          <div class="box-flex">
+            <div class="box-col">
+            </div>
+            <div class="box-col">
+              <div class="box-item blue">
+                <h3>Salesforce Migrations </h3>
+                <p>Merger or acquisition? We can merge your Salesforce orgs. Upgrading from HubSpot or another .....</p>
+                <div class="more" data-toggle="modal" data-target="#modal3">
+                  More <div class="arrow"></div>
+                </div>
               </div>
-              <p>We are experienced and certified specialists who can manage soup to nuts implementations for the following Salesforce products:</p>
-              <ul>
-                <li>Sales Cloud</li>
-                <li>Service Cloud</li>
-                <li>Marketing Cloud</li>
-                <li>Community Cloud</li>
-                <li>Platform</li>
-                <li>Einstein</li>
-                <li>Financial Service
-                  Cloud</li>
-                <li>Commerce
-                  Cloud</li>
-                <li>Health Cloud</li>
-              </ul>
+            </div>
+            <div class="box-col ">
+              <div class="box-item cyan">
+                <h3>Salesforce AppExchange </h3>
+                <p>Rare Karma can install and configure all the Salesforce apps and components you need to extend your org’s ..... </p>
+                <div class="more" data-toggle="modal" data-target="#modal4">
+                  More <div class="arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="box-col">
+              <div class="box-item green">
+                <h3>Salesforce Customization
+                </h3>
+                <p>Our certified developers can customize Salesforce using Lighting, Apex Classes, Triggers .....</p>
+                <div class="more" data-toggle="modal" data-target="#modal5">
+                  More <div class="arrow"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Migrations
+        </div>
+      </div>
+      <div class="box-wrap box-wrap3">
+        <div class="container">
+          <div class="box-flex">
+            <div class="box-col">
+              <div class="box-item green">
+                <h3>Salesforce Custom Integrations </h3>
+                <p>Sometimes you need to write code to properly integrate Salesforce with your business. Rare .....<br><br></p>
+                <div class="more" data-toggle="modal" data-target="#modal6">
+                  More <div class="arrow"></div>
+                </div>
               </div>
-              <p>Merger or acquisition? We can merge your Salesforce orgs. Upgrading from HubSpot or another CRM? We can migrate your existing data and solutions to Salesforce.</p>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce AppExchange
+            <div class="box-col">
+              <div class="box-item blue">
+                <h3>Salesforce Consulting and Project Management
+                </h3>
+                <p>Outsource your Salesforce administration to Rare Karma. Leverage .....</p>
+                <div class="more" data-toggle="modal" data-target="#modal7">
+                  More <div class="arrow"></div>
+                </div>
               </div>
-              <p>Rare Karma can install and configure all the Salesforce apps and components you need to extend your org’s functionality to support your business processes (e.g., Conga Composer, PandaDoc, ZoomInfo, etc.)</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Customization
-              </div>
-              <p>Our certified developers can customize Salesforce using Lighting, Apex Classes, Triggers, Flows, Visualforce, third-party integrations, etc. We will ensure that Salesforce meets the unique needs of your business.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Custom Integrations
-              </div>
-              <p>Sometimes you need to write code to properly integrate Salesforce with your business. Rare Karma has expert software developers who can build solutions that manage communication and data synchronization between Salesforce and your other solutions.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="item">
-              <div class="line"></div>
-              <div class="item-caption">Salesforce Consulting and Project Management
-              </div>
-              <p>Outsource your Salesforce administration to Rare Karma. Leverage our expertise and avoid the overhead of hiring and managing your own administrators. We can work behind the scenes and/or provide direct support to your users.</p>
             </div>
           </div>
         </div>
@@ -226,12 +246,12 @@
                   </div>
                   <div>
                     <strong>Daryl McNutt</strong>
-                    <span>Senior Vice President of Marketing, TapClicks
+                    <span>Sr. VP of Marketing, TapClicks
                     </span>
+                    <div class="brand">
+                      <img alt="" src="images/tapclicks.png">
+                    </div>
                   </div>
-                </div>
-                <div class="brand">
-                  <img alt="" src="images/tapclicks.png">
                 </div>
               </div>
               <div class="line">
@@ -249,7 +269,7 @@
       </div>
     </section>
     <!--contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-12 col-12">
@@ -307,11 +327,137 @@
             <img alt="" src="images/logo-white.svg">
           </div>
           <div class="allright">
-            <p>Copyright © 2020 All Rights Reserved</p>
+            <p>© Copyright 2021 Rare Karma. All rights Reserved.</p>
           </div>
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal" id="modal1">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Administration </span></h3>
+            <div class="mm-content">
+              <p>Outsource your Salesforce administration to Rare Karma. Leverage our expertise and avoid the overhead of hiring and managing your own administrators. We can work behind the scenes and/or provide direct support to your users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Implementations
+              </span></h3>
+            <div class="mm-content">
+              <p>We are experienced and certified specialists who can manage soup to nuts implementations for the following Salesforce products:</p>
+              <ul>
+                <li>Sales Cloud</li>
+                <li>Service Cloud</li>
+                <li>Marketing Cloud</li>
+                <li>Community Cloud</li>
+                <li>Platform</li>
+                <li>Einstein</li>
+                <li>Financial Service
+                  Cloud</li>
+                <li>Commerce
+                  Cloud</li>
+                <li>Health Cloud</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal3">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Migrations </span></h3>
+            <div class="mm-content">
+              <p>Merger or acquisition? We can merge your Salesforce orgs. Upgrading from HubSpot or another CRM? We can migrate your existing data and solutions to Salesforce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal4">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce AppExchange </span></h3>
+            <div class="mm-content">
+              <p>Rare Karma can install and configure all the Salesforce apps and components you need to extend your org’s functionality to support your business processes (e.g., Conga Composer, PandaDoc, ZoomInfo, etc.)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal5">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Customization </span></h3>
+            <div class="mm-content">
+              <p>Our certified developers can customize Salesforce using Lighting, Apex Classes, Triggers, Flows, Visualforce, third-party integrations, etc. We will ensure that Salesforce meets the unique needs of your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal6">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Custom Integrations </span></h3>
+            <div class="mm-content">
+              <p>Sometimes you need to write code to properly integrate Salesforce with your business. Rare Karma has expert software developers who can build solutions that manage communication and data synchronization between Salesforce and your other solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal7">
+    <div class="modal-dialog modal-dialog-centered max650">
+      <div class="modal-content">
+        <div class="modal-message">
+          <div class="close-modal" data-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="mm-box">
+            <h3 class="mm-caption"><span class="db-text">Salesforce Consulting and Project Management </span></h3>
+            <div class="mm-content">
+              <p>Outsource your Salesforce administration to Rare Karma. Leverage our expertise and avoid the overhead of hiring and managing your own administrators. We can work behind the scenes and/or provide direct support to your users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!--scrip file-->
   <script src="js/jquery-1.12.4.min.js"></script>

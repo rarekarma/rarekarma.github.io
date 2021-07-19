@@ -23,6 +23,26 @@
         }
         return false;
       });
+
+
+
+      function goToByScroll(id) {
+        // Remove "link" from the ID
+        id = id.replace("link", "");
+        // Scroll
+        $('html,body').animate({
+          scrollTop: $(id).offset().top
+        }, 1200);
+      }
+
+      $(".menu > ul > li > a").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("data-id"));
+      });
+
+
     }
 
 
