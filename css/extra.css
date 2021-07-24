@@ -1,0 +1,6 @@
+/* Extra css rule that need to be integrated into the design */
+
+input[type=submit].btn-primary {
+    background-color: #3E87C7;
+    border-color: #3E87C7;
+}
