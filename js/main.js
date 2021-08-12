@@ -46,8 +46,38 @@
     }
 
 
+    db.sliderSkills = function () {
+      if ($('.owl-skill').length) {
+        $('.owl-skill').owlCarousel({
+          loop: true,
+          margin: 40,
+          nav: true,
+          navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 2
+            },
+            992: {
+              items: 3
+            },
+            1299: {
+              items: 4
+            }
+          }
+        })
+
+      }
+
+    }
+
+
+
 
     db.preLoad();
     db.menu();
+    db.sliderSkills();
   });
 })(jQuery);
