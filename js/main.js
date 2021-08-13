@@ -43,6 +43,16 @@
       });
 
 
+
+
+      $(".landing-hero .button-brand").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("data-id"));
+      });
+
+
     }
 
 
@@ -52,6 +62,9 @@
           loop: true,
           margin: 40,
           nav: true,
+          autoplay: true,
+          smartSpeed: 700,
+          autoplayTimeout: 4000,
           navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
           responsive: {
             0: {
@@ -72,6 +85,8 @@
       }
 
     }
+
+
 
 
 
