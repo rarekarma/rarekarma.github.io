@@ -51,6 +51,18 @@
         // Call the scroll function
         goToByScroll($(this).attr("data-id"));
       });
+      $(".monthly .button-second").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("data-id"));
+      });
+      $(".learn .button-brand").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("data-id"));
+      });
 
 
     }
