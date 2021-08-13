@@ -43,11 +43,54 @@
       });
 
 
+
+
+      $(".landing-hero .button-brand").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("data-id"));
+      });
+
+
     }
+
+
+    db.sliderSkills = function () {
+      if ($('.owl-skill').length) {
+        $('.owl-skill').owlCarousel({
+          loop: true,
+          margin: 40,
+          nav: true,
+          autoplay: true,
+          smartSpeed: 700,
+          autoplayTimeout: 4000,
+          navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 2
+            },
+            992: {
+              items: 3
+            },
+            1299: {
+              items: 4
+            }
+          }
+        })
+
+      }
+
+    }
+
 
 
 
     db.preLoad();
     db.menu();
+    db.sliderSkills();
   });
 })(jQuery);

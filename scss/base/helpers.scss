@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: $radius;
+  border-radius: 5px;
   font-weight: 600;
   overflow: hidden;
 
@@ -29,6 +29,23 @@
       background-color: lighten($brand-color, 5%);
       color: #fff;
     }
+  }
+
+  &.button-second {
+    background-color: #214185;
+    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2), 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: lighten(#214185, 5%);
+      color: #fff;
+    }
+  }
+
+
+  &.button-normal {
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 18px;
   }
 
   &.button-small {
@@ -176,22 +193,17 @@
 .textarea {
   display: block;
   width: 100%;
-  border-radius: 5px;
-  border: solid 1px $border-color;
-  background-color: #fff;
+  height: 135px;
+  border: none;
+  background-color: #E8F1FF;
   outline: none;
-  padding: 10px 10px;
-  font-size: 14px;
+  padding: 15px 15px;
+  font-size: 16px;
   transition: all ease 0.3s;
   border-radius: 5px;
 
   &:focus {
-    border: 1px solid $brand-color;
-  }
-
-  &.is-large {
-    padding: 10px 10px;
-    font-size: 15px;
+    background-color: darken(#E8F1FF, 10%);
   }
 }
 
