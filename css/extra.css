@@ -4,3 +4,7 @@ input[type=submit].btn-primary {
     background-color: #3E87C7;
     border-color: #3E87C7;
 }
+
+textarea.input {
+    padding-top: 5px;
+}

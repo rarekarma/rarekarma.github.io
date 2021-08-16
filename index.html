@@ -284,7 +284,7 @@
               <span>Contact us </span>
             </div>
             <p>Rare Karma provides the Salesforce Consulting services that are most important to medium-sized organizations. Practical and focussed on results that deliver value we won’t overcharge you for over-engineered solutions.</p>
-            <form action="https://go.pardot.com/l/929983/2021-07-22/zlf" method="get">
+            <form action="http://go.pardot.com/l/929983/2021-07-22/zlf" method="post">
               <div class="contact-form">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -303,19 +303,14 @@
                   </div>
                 </div>
                 <div class="field">
-                  <div class="caption">Company website
-                  </div>
-                  <input type="text" class="input" placeholder="www.yourcompany.com" id="companywebsite" name="companywebsite">
-                </div>
-                <div class="field">
                   <div class="caption">Email
                   </div>
                   <input type="text" class="input" placeholder="you@youremail.com" id="email" name="email">
                 </div>
                 <div class="field">
-                  <div class="caption">Phone
+                  <div class="caption">Message
                   </div>
-                  <input type="text" class="input" placeholder="123-456-7890" id="phone" name="phone">
+                  <textarea class="input" placeholder="Enter a message here" id="message" name="message"></textarea>
                 </div>
                 <input type="submit" class="btn btn-primary" value="Submit">
               </div>
@@ -469,6 +464,23 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- pardot tracking -->
+  <script type="text/javascript">
+    piAId = '930983';
+    piCId = '1029';
+    piHostname = 'pi.pardot.com';
+    
+    (function() {
+      function async_load(){
+        var s = document.createElement('script'); s.type = 'text/javascript';
+        s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+        var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+      }
+      if(window.attachEvent) { window.attachEvent('onload', async_load); }
+      else { window.addEventListener('load', async_load, false); }
+    })();
+  </script>
 </body>
 
 </html>
