@@ -71,7 +71,7 @@
     db.sliderSkills = function () {
       if ($('.owl-skill').length) {
         $('.owl-skill').owlCarousel({
-          loop: true,
+          loop: false,
           margin: 40,
           nav: true,
           autoplay: true,
