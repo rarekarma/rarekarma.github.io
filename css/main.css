@@ -1486,14 +1486,14 @@ img {
   width: 100%;
   height: 135px;
   border: none;
-  background-color: #E8F1FF;
+  background-color: rgba(44, 44, 44, 0.06);
   outline: none;
   padding: 15px 15px;
   font-size: 16px;
   transition: all ease 0.3s;
   border-radius: 5px; }
   .textarea:focus {
-    background-color: #b5d2ff; }
+    background-color: rgba(44, 44, 44, 0.1); }
 
 .radio {
   display: inline-block;
@@ -2736,7 +2736,8 @@ img {
     padding-bottom: 30px; }
   .skills .owl-carousel .owl-nav {
     text-align: center;
-    padding: 20px 0px 0px 0px; }
+    padding: 20px 0px 0px 0px;
+    display: block !important; }
     .skills .owl-carousel .owl-nav button.owl-prev {
       width: 55px;
       height: 55px;
