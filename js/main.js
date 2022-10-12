@@ -37,9 +37,9 @@
 
       $(".menu > ul > li > a").click(function (e) {
         // Prevent a page reload when a link is pressed
-        e.preventDefault();
+        //e.preventDefault();
         // Call the scroll function
-        goToByScroll($(this).attr("data-id"));
+        //    goToByScroll($(this).attr("data-id"));
       });
 
 
@@ -71,7 +71,7 @@
     db.sliderSkills = function () {
       if ($('.owl-skill').length) {
         $('.owl-skill').owlCarousel({
-          loop: false,
+          loop: true,
           margin: 40,
           nav: true,
           autoplay: true,
@@ -80,16 +80,20 @@
           navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
           responsive: {
             0: {
-              items: 1
+              items: 1,
+              loop: true,
             },
             576: {
-              items: 2
+              items: 2,
+              loop: true,
             },
             992: {
-              items: 3
+              items: 3,
+              loop: true,
             },
             1299: {
-              items: 4
+              items: 4,
+              loop: true,
             }
           }
         })

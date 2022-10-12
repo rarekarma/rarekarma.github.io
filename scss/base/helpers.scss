@@ -158,7 +158,7 @@
   width: 100%;
   height: 58px;
   border: none;
-  background-color:rgba(44, 44, 44, 0.06);
+  background-color: rgba(44, 44, 44, 0.06);
   outline: none;
   padding: 0px 15px;
   font-size: 16px;
@@ -196,7 +196,7 @@
   width: 100%;
   height: 135px;
   border: none;
-  background-color: #E8F1FF;
+  background-color: rgba(44, 44, 44, 0.06);
   outline: none;
   padding: 15px 15px;
   font-size: 16px;
@@ -204,7 +204,7 @@
   border-radius: 5px;
 
   &:focus {
-    background-color: darken(#E8F1FF, 10%);
+    background-color: rgba(44, 44, 44, 0.1);
   }
 }
 
@@ -255,7 +255,7 @@
       }
     }
 
-    input:checked ~ span {
+    input:checked~span {
       &:after {
         content: "";
         display: block;
@@ -308,7 +308,7 @@
       }
     }
 
-    input:checked ~ span {
+    input:checked~span {
       &:after {
         content: "";
         display: block;
@@ -439,4 +439,3 @@
 .text-underline {
   text-decoration: underline;
 }
-
